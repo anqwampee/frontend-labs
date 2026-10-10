@@ -2,18 +2,35 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
         <title>AltShop - Sign Up</title>
     </head>
     <body>
- 
+
         <header>
-            <img src="AltShop.svg" alt="AltShop logo">
+            <img src="logo/AltShop.svg" alt="AltShop logo">
             <a href="home-page.html"><button type="button">Back to Home</button></a>
         </header>
- 
+
         <main>
-            <h1>Not implemented yet</h1>
+            <h1>Sign Up</h1>
+
+            <form id="signup-grid" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Create account</button>
+            </form>
         </main>
- 
+
     </body>
-</html>>
+</html>

@@ -2,21 +2,41 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <style>
+            @keyframes getOld {
+                from { filter: sepia(0)}
+                to {filter: sepia(1)}
+            }
+            .product img:hover {
+                animation-name: getOld;
+                animation-duration: 5s;
+            }
+        </style>
         <title>AltShop - Catalogue</title>
     </head>
-    <body>
+    <body class="catalog">
         <header>
             <img src="logo/AltShop.svg" alt="AltShop logo" height="200">
-             <a href="home-page.html"><button type="button">Back to Home</button></a>
+            <nav>
+                <ul>
+                    <li><a href="home-page.html">Back Home</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="feedback.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="account.html"><button type="button">My Account</button></a>
+            <a href="signup.html"><button type="button">Sign Up</button></a>
         </header>
  
         <main>
             <section>
-                <h2>Tops</h2>
-
-                 <article>
+                 <article class="product">
                     <img src="products/graffiti-hoodie.jpeg" alt="Graffiti Hoodie" height="400">
-                    <h3>Graffiti Hoodie</h3>
+                    <h2>Graffiti Hoodie</h2>
                     <p>Country of origin: Ukraine</p>
                     <ul>
                         <li>Material: 80% cotton, 20% polyester</li>
@@ -27,9 +47,9 @@
                     </ul>
                 </article>
 
-                <article>
+                <article class="product">
                     <img src="products/mesh-longsleeve.jpg" alt="Mesh Longsleeve" height="400">
-                    <h3>Mesh Longsleeve</h3>
+                    <h2>Mesh Longsleeve</h2>
                     <p>Country of origin: Ukraine</p>
                     <ul>
                         <li>Material: 95% polyester, 5% elastane</li>
@@ -42,10 +62,9 @@
             </section>
  
             <section>
-                <h2>Bottoms</h2>
-                 <article>
+                 <article class="product">
                     <img src="products/patchwork-jeans.jpeg" alt="Patchwork Jeans" height="400">
-                    <h3>Patchwork Jeans</h3>
+                    <h2>Patchwork Jeans</h2>
                     <p>Country of origin: Poland</p>
                     <ul>
                         <li>Material: 100% denim</li>
@@ -56,9 +75,9 @@
                     </ul>
                 </article>
 
-                <article>
+                <article class="product">
                     <img src="products/cargo-pants.jpg" alt="Cargo Pants" height="400">
-                    <h3>Cargo Pants</h3>
+                    <h2>Cargo Pants</h2>
                     <p>Country of origin: Germany</p>
                     <ul>
                         <li>Material: 100% cotton ripstop</li>
@@ -71,10 +90,9 @@
             </section>
  
             <section>
-                <h2>Footwear</h2>
-                <article>
+                <article class="product">
                     <img src="products/platform-boots.jpeg" alt="Platform Boots" height="400">
-                    <h3>Platform Boots</h3>
+                    <h2>Platform Boots</h2>
                     <p>Country of origin: Italy</p>
                     <ul>
                         <li>Material: vegan leather</li>
@@ -84,9 +102,9 @@
                         <li>Care: wipe with damp cloth</li>
                     </ul>
                 </article>
-                <article>
+                <article class="product">
                     <img src="products/canvas-sneakers.webp" alt="Canvas Sneakers" height="400">
-                    <h3>Canvas Sneakers</h3>
+                    <h2>Canvas Sneakers</h2>
                     <p>Country of origin: Vietnam</p>
                     <ul>
                         <li>Material: canvas upper, rubber sole</li>
@@ -99,10 +117,9 @@
             </section>
  
             <section>
-                <h2>Accessories</h2>
-                <article>
+                <article class="product">
                     <img src="products/chain-choker.jpeg" alt="Chain Choker" height="400">
-                    <h3>Chain Choker</h3>
+                    <h2>Chain Choker</h2>
                     <p>Country of origin: Ukraine</p>
                     <ul>
                         <li>Material: stainless steel</li>
